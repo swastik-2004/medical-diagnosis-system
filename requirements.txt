@@ -1,0 +1,24 @@
+# Core PyTorch
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+
+# ML & Data Processing
+scikit-learn==1.4.2
+numpy==1.26.4
+pandas==2.2.2
+
+# Visualization
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# NLP & Transformers
+transformers==4.40.1
+datasets==2.19.1
+nltk==3.8.1
+
+
+# Image Processing
+opencv-python==4.9.0.80
+pillow==10.3.0
+
