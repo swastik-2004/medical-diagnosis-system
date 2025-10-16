@@ -1,0 +1,123 @@
+MEDICAL AI PREDICTION SYSTEM - HOW TO RUN
+==========================================
+
+QUICK START GUIDE
+=================
+
+STEP 1: Open Command Prompt/Terminal
+------------------------------------
+- Press Windows + R
+- Type "cmd" and press Enter
+- OR open PowerShell
+
+STEP 2: Navigate to Project Directory
+------------------------------------
+Type this command and press Enter:
+cd "C:\Users\swastik dasgupta\Desktop\medicalproj"
+
+STEP 2.5: Activate Virtual Environment (RECOMMENDED)
+---------------------------------------------------
+Type this command and press Enter:
+venv\Scripts\activate
+
+You should see (venv) appear at the beginning of your command prompt line.
+This means your virtual environment is active.
+
+STEP 3: Install Required Packages (if not already installed)
+-----------------------------------------------------------
+Type this command and press Enter:
+pip install flask numpy pandas torch torchvision pillow scikit-learn nltk
+
+STEP 4: Download NLTK Data (if not already done)
+-----------------------------------------------
+Type this command and press Enter:
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
+
+STEP 5: Run the Flask Application
+-------------------------------
+Type this command and press Enter:
+python app.py
+
+You should see output like:
+- Loading models...
+- Heart disease model loaded
+- Heart scaler loaded
+- Heart feature columns loaded
+- Symptom model and vectorizer loaded
+- X-ray model loaded
+- All models loaded successfully!
+- Starting Flask application...
+- Running on http://127.0.0.1:5000
+
+STEP 6: Open Web Browser
+-----------------------
+- Open any web browser (Chrome, Firefox, Edge, etc.)
+- Go to: http://localhost:5000
+- OR go to: http://127.0.0.1:5000
+
+STEP 7: Use the Web Application
+------------------------------
+1. Enter symptoms in the text box (e.g., "chest pain and shortness of breath")
+2. Fill in heart disease parameters (optional)
+3. Upload a chest X-ray image (optional)
+4. Click "Get AI Prediction"
+5. View the results with probability scores
+
+TROUBLESHOOTING
+==============
+
+Problem: "No module named flask"
+Solution: Run Step 3 to install Flask
+
+Problem: "can't open file 'app.py'"
+Solution: Make sure you're in the correct directory (Step 2)
+
+Problem: Unicode/emoji errors
+Solution: The app has been fixed to work with Windows terminal
+
+Problem: Models not loading
+Solution: Make sure all .pkl and .pth files are in the project folder
+
+Problem: NLTK errors
+Solution: Run Step 4 to download NLTK data
+
+STOPPING THE APPLICATION
+=======================
+- In the terminal where the app is running, press Ctrl+C
+- This will stop the Flask server
+
+DEACTIVATING VIRTUAL ENVIRONMENT
+================================
+- To deactivate the virtual environment, type: deactivate
+- This will return you to the system Python environment
+
+RESTARTING THE APPLICATION
+=========================
+- If you need to restart, just run Step 5 again
+- The models will reload automatically
+
+ACCESSING FROM OTHER DEVICES
+============================
+- The app runs on your local network
+- Other devices can access it using: http://[YOUR_IP]:5000
+- Your IP address will be shown in the terminal output
+
+IMPORTANT NOTES
+===============
+- Keep the terminal window open while using the app
+- The app is for educational/research purposes only
+- Always consult healthcare professionals for medical decisions
+- Uploaded images are processed locally and deleted immediately
+
+SUPPORTED FEATURES
+==================
+✓ Symptom-based disease prediction (24 diseases)
+✓ Heart disease risk assessment
+✓ Chest X-ray pneumonia detection
+✓ Combined multimodal predictions
+✓ Beautiful web interface
+✓ Mobile-friendly design
+
+ENJOY YOUR MEDICAL AI PREDICTION SYSTEM!
+========================================
+
