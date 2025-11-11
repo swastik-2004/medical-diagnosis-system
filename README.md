@@ -35,28 +35,6 @@ It demonstrates real-world **multimodal AI integration** — combining **text**,
 ✅ Clean, responsive **Flask web UI**  
 ✅ Modular, extendable, and fully reproducible  
 
----
-
-## 🏗️ Project Structure
-
-medical-diagnosis-system/
-│
-├── app.py # Flask web app (main entry point)
-├── combined_model.ipynb # Unified multimodal model notebook
-├── saved_models/ # Serialized trained models (.pkl, .pth)
-│ ├── symptos2disease_model_corrected.pkl
-│ ├── heart_model.pkl
-│ ├── chest_xray_cnn.pth
-│ └── tfidf_vectorizer.pkl
-│
-├── Symptom2Disease.csv # Symptom-disease dataset
-├── heart_disease_uci.csv # Heart dataset
-├── requirements.txt # Dependencies
-├── HOW_TO_RUN.txt # Step-by-step local run guide
-├── README.md # Documentation (this file)
-└── static / templates # Frontend UI files (Flask)
-
-
 
 ## 🧩 How It Works
 
@@ -90,16 +68,14 @@ pip install -r requirements.txt
 # 4️⃣ Run Flask app
 python app.py
 Now open your browser and visit:
-
-arduino
-Copy code
 http://localhost:5000/
 🖥️ Web App Preview
-(You can upload your screenshot here for visual appeal)
+<img width="1920" height="1080" alt="Screenshot (499)" src="https://github.com/user-attachments/assets/3e84f49f-1a8a-4691-802d-8890738be0ac" />
 
-markdown
-Copy code
-![App Screenshot](screenshots/app_demo.png)
+<img width="1920" height="1080" alt="Screenshot (500)" src="https://github.com/user-attachments/assets/942d7f4c-9177-476d-8fb8-7452a5a5aa60" />
+
+
+
 📊 Model Performance
 Model	Accuracy	Dataset
 Symptom2Disease	95%	Symptom2Disease.csv
